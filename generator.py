@@ -1,5 +1,5 @@
 #Allow user to specify minimum and maximum lengths of passphrase and ensure specifications are valid
-if 1==1:
+while 1==1:
   minchar = int(input("Minimum Character Length: "))
   maxchar = int(input("Maximum Character Length: "))
   minword = int(input("Minimum Word Length: "))
