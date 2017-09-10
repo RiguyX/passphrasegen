@@ -7,6 +7,7 @@ while 1==1:
   maxchar = int(input("Maximum Character Length: "))
   minword = int(input("Minimum Word Length: "))
   maxword = int(input("Maximum Word Length: "))
+  separators = input("Seperators (Multiple Allowed): ")
   if (minchar <= maxchar) and (minword <= maxword) and (minchar > 0) and (minword > 0):
     break
   else:
@@ -17,6 +18,6 @@ print("Input valid. The actual generator is a work in progress, so DON'T USE THI
 passphrase = ""
 for i in range(random.randrange(minword, maxword)):
   word = secrets.choice(["Agent","Blurt","Center","Difficult","Elite","Forearm","Guerilla"]) #THIS IS ONLY AN EXPERIMENTAL LIST!! Do not use this to generate passphrases!
-  passphrase = passphrase + word
+  passphrase = passphrase + word + separators[random.randint(0, len(separators)-1)]
 passphrase = passphrase + str(random.randint(0, 9))
 print(passphrase)
