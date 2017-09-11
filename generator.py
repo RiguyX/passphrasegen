@@ -1,3 +1,4 @@
+from .dictionary import Dictionary
 import random
 import secrets
 #Allow user to specify minimum and maximum lengths of passphrase and ensure specifications are valid
@@ -16,7 +17,7 @@ print("Input valid. The actual generator is a work in progress, so DON'T USE THI
 #todo: Use an actual dictionary source for words
 passphrase = ""
 for i in range(random.randrange(minword, maxword)):
-  word = secrets.choice(["Agent","Blurt","Center","Difficult","Elite","Forearm","Guerilla"]) #THIS IS ONLY AN EXPERIMENTAL LIST!! Do not use this to generate passphrases!
+  word = secrets.choice(Dictionary) #THIS IS ONLY AN EXPERIMENTAL LIST!! Do not use this to generate passphrases!
   passphrase = passphrase + word + separators[random.randint(0, len(separators)-1)]
 passphrase = passphrase + str(random.randint(0, 9))
 print(passphrase)
