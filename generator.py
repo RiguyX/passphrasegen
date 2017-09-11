@@ -1,4 +1,3 @@
-from .dictionary import Dictionary
 import random
 import secrets
 #Allow user to specify minimum and maximum lengths of passphrase and ensure specifications are valid
@@ -13,7 +12,8 @@ while 1==1:
   else:
     print("Input invalid! Make sure minimum lengths are shorter than maximums and are positive numbers!")
     continue
-print("Input valid. The actual generator is a work in progress, so DON'T USE THIS PASSPHRASE!")
+print("This generator is a work in progress, so DON'T USE THIS PASSPHRASE!")
+Dictonary = ["Words", "Should", "Go", "Here", "Agent","Blurt","Center","Difficult","Elite","Forearm","Guerilla"]
 #todo: Use an actual dictionary source for words
 passphrase = ""
 for i in range(random.randrange(minword, maxword)):
