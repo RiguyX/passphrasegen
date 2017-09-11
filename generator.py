@@ -24,14 +24,14 @@ while 1==1:
       while 1==1:
         print("This generator is a work in progress, so DON'T USE THIS PASSPHRASE!")
         #todo: Use an actual dictionary source for words
-       passphrase = ""
-       #Actually builds the passphrase from user-defined separators and the variable dictionary
+        passphrase = ""
+        #Actually builds the passphrase from user-defined separators and the variable dictionary
         for i in range(random.randrange(minword, maxword)):
           word = secrets.choice(dictionary)
           passphrase = passphrase + word + separators[random.randint(0, len(separators)-1)]
-       passphrase = passphrase + str(random.randint(0, 9))
-       print(passphrase)
-       print("""Would you like to...
+        passphrase = passphrase + str(random.randint(0, 9))
+        print(passphrase)
+        print("""Would you like to...
         1) Generate another passphrase, or
         2) Return to main option selection?""")
         userchoice2 = input("(Please select 1 or 2): ")
