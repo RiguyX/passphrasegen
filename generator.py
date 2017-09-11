@@ -47,8 +47,22 @@ while 1==1:
       3) Return to main option selection?""")
       userchoice2 = input("(Please select 1, 2, or 3): ")
       if userchoice2 == "1":
-        #todo add vocab editor
-        print("This feature is not yet implemented. Sorry!")
+        while 1==1:
+          vocabchange = input('"+word": Add a word; "-word": Remove a word; "x": Exit vocabulary editor.'
+          if vocabchange[0] = "+":
+            vocabchange = vocabchange.replace("+", "")
+            if vocabchange in dictionary:
+              print("This word is already in the generator's vocabulary.")
+            else:
+              dictionary.append(vocabchange)
+          elif vocabchange[0] = "-":
+            vocabchange = vocabchange.replace("-", "")
+            if vocabchange in dictionary:
+              dictionary.remove(vocabchange)
+            else:
+              print("This word was not found in the generator's vocabulary.")
+          else:
+            break
         continue
       elif userchoice2 == "2":
         for i in dictionary:
