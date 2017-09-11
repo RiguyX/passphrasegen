@@ -48,14 +48,14 @@ while 1==1:
       userchoice2 = input("(Please select 1, 2, or 3): ")
       if userchoice2 == "1":
         while 1==1:
-          vocabchange = input('"+word": Add a word; "-word": Remove a word; "x": Exit vocabulary editor.'
-          if vocabchange[0] == "+":
+          vocabchange = input('"+word": Add a word; "-word": Remove a word; "x": Exit vocabulary editor.')
+          if (vocabchange[0] == "+"):
             vocabchange = vocabchange.replace("+", "")
             if vocabchange in dictionary:
               print("This word is already in the generator's vocabulary.")
             else:
               dictionary.append(vocabchange)
-          elif vocabchange[0] == "-":
+          elif (vocabchange[0] == "-"):
             vocabchange = vocabchange.replace("-", "")
             if vocabchange in dictionary:
               dictionary.remove(vocabchange)
