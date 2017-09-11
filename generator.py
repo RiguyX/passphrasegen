@@ -4,7 +4,7 @@ dictionary = ["Words", "Should", "Go", "Here", "Agent","Blurt","Center","Difficu
 while 1==1:
   print("""Would you like to...
   1) Generate a passphrase, or
-  2) Edit the generator's vocabulary?"""
+  2) Edit the generator's vocabulary?""")
   userchoice = input("(Please select 1 or 2)")
   if userchoice = "1":
     #Allow user to specify minimum and maximum lengths of passphrase and ensure specifications are valid
@@ -33,7 +33,7 @@ while 1==1:
     print("""Would you like to...
     1) Add or remove entries,
     2) View the generator's vocabulary, or
-    3) Return to the main option select?"""
+    3) Return to the main option select?""")
     userchoice2 = input("(Please select 1, 2, or 3)")
     if userchoice2 = 1:
       #todo add vocab editor
