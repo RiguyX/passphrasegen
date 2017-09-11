@@ -1,7 +1,6 @@
 # passphrasegen
-Program to generate passphrases like correcthorsebatterystaple.net
+Provides passphrases like correcthorsebatterystaple.net without the issues of a web-based password generator.
 
-Planned Features:
-- Randomly generates a passphrase from a given dictionary of English words appended by a number, with various characters used as spaces
-- Ability to add additional words manually or by importing dictionaries
-- Allows user to specify minimum and maximum character and word length and what characters to use as spaces
+Features:
+- This program randomly generates a passphrase consisting of randomly selected English words, user-specified separator characters, and a number.
+- Users can specify minimum and maximum word length as well as what characters to use as separators.
