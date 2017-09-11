@@ -4,8 +4,9 @@ dictionary = ["Words", "Should", "Go", "Here", "Agent","Blurt","Center","Difficu
 while 1==1:
   print("""Would you like to...
   1) Generate a passphrase, or
-  2) Edit the generator's vocabulary?""")
-  userchoice = input("(Please select 1 or 2): ")
+  2) Edit the generator's vocabulary, or
+  3) Exit the program?""")
+  userchoice = input("(Please select 1, 2, or 3): ")
   if userchoice == "1":
     #Allow user to specify minimum and maximum lengths of passphrase and ensure specifications are valid
     while 1==1:
@@ -29,19 +30,21 @@ while 1==1:
       passphrase = passphrase + word + separators[random.randint(0, len(separators)-1)]
     passphrase = passphrase + str(random.randint(0, 9))
     print(passphrase)
-  else:
+  elif userchoice == "2":
     print("""Would you like to...
     1) Add or remove entries,
     2) View the generator's vocabulary, or
     3) Return to the main option select?""")
     userchoice2 = input("(Please select 1, 2, or 3): ")
-    if userchoice2 == 1:
+    if userchoice2 == "1":
       #todo add vocab editor
       print("This feature is not yet implemented. Sorry!")
       continue
-    elif userchoice2 == 2:
+    elif userchoice2 == "2":
       for i in dictionary:
         print(i)
       continue
     else:
       continue
+  else:
+    break
