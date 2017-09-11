@@ -42,6 +42,6 @@ while 1==1:
     elif userchoice2 == 2:
       for i in dictionary:
         print(dictionary[i])
-        continue
+      continue
     else:
       continue
