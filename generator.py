@@ -1,6 +1,11 @@
 import random
 import secrets
-dictionary = ["Words", "Should", "Go", "Here", "Agent","Blurt","Center","Difficult","Elite","Forearm","Guerilla"]
+vocab = open("/usr/share/dict/words", "r")
+dictionary = vocab.readlines()
+vocab.close()
+dictionary = [w.replace("\n", "") for w in dictionary]
+#dictionary = ["Words", "Should", "Go", "Here", "Agent","Blurt","Center","Difficult","Elite","Forearm","Guerilla"]
+#This was the old demo dictionary.
 while 1==1:
   print("""Would you like to...
   1) Generate a passphrase, or
