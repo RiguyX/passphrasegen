@@ -46,14 +46,15 @@ while 1==1:
           break
   elif userchoice == "2":
     while 1==1:
-      print("""Would you like to...
+      print("""NOTICE: CURRENTLY, EDITS TO THE VOCABULARY ARE NOT SAVED BETWEEN INSTANCES OF THE PROGRAM!
+      Would you like to...
       1) Add or remove entries,
       2) View the generator's vocabulary, or
       3) Return to main option selection?""")
       userchoice2 = input("(Please select 1, 2, or 3): ")
       if userchoice2 == "1":
         while 1==1:
-          print('"+word": Add a word; "-word": Remove a word; "x": Exit vocabulary editor.')
+          print('"+word": Add word; "-word": Remove a word; "x": Exit vocabulary editor.')
           vocabchange = input("")
           if (vocabchange[0] == "+"):
             vocabchange = vocabchange.replace("+", "")
