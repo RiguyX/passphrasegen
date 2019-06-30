@@ -1,5 +1,5 @@
 # passphrasegen
-Provides passphrases like correcthorsebatterystaple.net without the issues of a web-based password generator.
+Provides passphrases like correcthorsebatterystaple.net without the security issues of a web-based password generator.
 
 THIS PROGRAM WORKS FOR LINUX ONLY!
 
