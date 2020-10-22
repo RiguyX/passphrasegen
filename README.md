@@ -1,4 +1,7 @@
 # passphrasegen
+
+Warning: Developer does not recommend use of this program.
+
 Provides passphrases like correcthorsebatterystaple.net without the security issues of a web-based password generator.
 
 THIS PROGRAM WORKS FOR LINUX ONLY!
